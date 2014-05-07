@@ -11,8 +11,17 @@ body {
   font-weight:300;
 }
 
+.topbanner {
+  max-width:1050px;
+  margin:0 auto;
+  *zoom: 2;
+  position: relative;
+  float: right;
+
+}
+
 .wrapper {
-  width:950px;
+  width:auto;
   margin:0 auto;
   *zoom: 1;
 }
@@ -432,6 +441,10 @@ img.pull-left {
 @media print, screen and (max-width: 1050px) {
   
   div.wrapper {
+    width:600px;
+  }
+
+  div.topbanner{
     width:600px;
   }
   
