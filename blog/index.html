@@ -5,7 +5,7 @@ title: Blog
 
 <div class="wrapper">
     <section>
-        {% for post in site.posts %}
+        {% for post in site.categories.blog %}
             <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p class="post-meta">
                 {{ post.date | date_to_string }}
@@ -16,9 +16,8 @@ title: Blog
             <img src="{{ post.image }}" alt="{{ post.title }}" />
             </a>
             {% endif %}
-
-            <p class="post-excerpt">{{ post.excerpt | strip_html }} [<a style="color:red" href="{{ post.url }}">read more</a>]</p>
-
+            
+        <p class="post-excerpt">{{ project.excerpt | strip_html }}[<a style="color:red" href="{{ project.url }}">read more</a>]</p>
         {% endfor %}
         
     </section>
