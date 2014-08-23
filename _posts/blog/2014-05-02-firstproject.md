@@ -1,5 +1,5 @@
 ---
-layout: portfolio_entry
+layout: blog_entry
 categories: "blog"
 title: First blog
 image: /img/folder2/banner1.jpg
