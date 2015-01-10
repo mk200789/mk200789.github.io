@@ -16,9 +16,8 @@ title: Blog
             <img src="{{ post.image }}" alt="{{ post.title }}" />
             </a>
             {% endif %}
-            
-        <p class="post-excerpt">{{ project.excerpt | strip_html }}[<a style="color:red" href="{{ project.url }}">read more</a>]</p>
+
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords:30 }}[<a style="color:red" href="{{ post.url }}">read more</a>]</p>
         {% endfor %}
-        
     </section>
 </div>
