@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/pygment_trac.css">
     <link rel="stylesheet" href="/css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="/css/font-awesome-4.2.0/css/font-awesome.min.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script src="/js/jquery.bxslider.min.js"></script>
@@ -15,17 +16,19 @@
 <body>
     <div class="wrapper">
         <header>
-        <nav role="navigation">
-            <ul>
-                <li><a href="/about/ "> About </a></li>
-                <li><a href="/portfolio/ " title="Show case projects"> Projects </a></li>
-                <li><a href="/blog/ " title="Relevent & Random Blogs"> Blog </a></li>
-            </ul>
-        </nav>
+            <a href="/"><i class="fa fa-home fa-lg"></i></a>
+            <a href="http://github.com/mk200789"><i class="fa fa-github-square fa-lg"></i></a>
+            <a href="http://bitbucket.com/mk200789"><i class="fa fa-bitbucket-square fa-lg"></i></a>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="/about/ "> About </a></li>
+                    <li><a href="/portfolio/ " title="Show case projects"> Projects </a></li>
+                    <li><a href="/blog/ " title="Relevent & Random Blogs"> Blog </a></li>
+                </ul>
+            </nav>
         </header>
-    {{content}}
+        {{content}}
     </div>
     <script src="/js/scale.fix.js"></script>
-
 </body>
 </html>
