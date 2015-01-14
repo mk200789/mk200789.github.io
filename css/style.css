@@ -199,7 +199,6 @@ header h1 {
   margin-bottom: 12px;
 }
 
-
 /* Navbar */
 
 nav ul {
@@ -257,6 +256,39 @@ nav li a.active:hover {
 
 
 /* Responsive Adjustments */
+
+@media print, screen and (max-width: 1450px) {
+  div.wrapper {
+    width:900px;
+  }
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+  
+  header {
+    position: relative;
+    /*padding: 0px 0px 20px 0px;*/
+    margin: 0;
+    min-height: 0;
+  }
+  
+  section {
+    padding:25px 0;
+    /*margin:0 0 20px;*/
+  }
+  
+  header a small {
+    display:inline;
+  }
+  
+  header ul {
+    position:absolute;
+    right:0;
+    top:5px;
+  }
+}
 
 @media print, screen and (max-width: 950px) {
   
