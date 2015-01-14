@@ -2,7 +2,7 @@
 layout: blog_entry
 categories: "blog"
 title: First blog
-image: /img/folder2/banner1.jpg
+image: /img/blog/banner1.jpg
 ---
 
 First Post.
