@@ -259,7 +259,7 @@ nav li a.active:hover {
 
 @media print, screen and (max-width: 1450px) {
   div.wrapper {
-    width:900px;
+    width:800px;
   }
   header, section, footer {
     float:none;
