@@ -13,5 +13,3 @@ Super Mario World Koopa Krisis is a clone built using Javascript and <a href="ht
 Prior to this project, I've never worked on a project with Javascript nor have I had much knowledge of the language. Moreover, I have never worked on a game, let alone did I have any experience with game engines. Working on SMW Koopa Krisis was a good experience, I learned Javascript and the structure of and how to use ImpactJS game engine. 
 
 I was given a role to implement some enemy AIs. I started with implementing the basic stalking enemy, eventually I building more sophosticated enemies which included timer and detection.
-
-2014-08-15-koopakrisis
