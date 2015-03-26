@@ -8,7 +8,11 @@ body {
   color:#333;
   font-weight:300;
 }
-
+footer{
+  margin-top: 50px;
+  font-size: 10px;
+  float: right;
+}
 .wrapper {
   width:auto;
   margin:0 auto;
@@ -261,7 +265,7 @@ nav li a.active:hover {
   div.wrapper {
     width:800px;
   }
-  header, section, footer {
+  header, section {
     float:none;
     position:static;
     width:auto;
@@ -300,7 +304,7 @@ nav li a.active:hover {
     width:600px;
   }
   
-  header, section, footer {
+  header, section {
     float:none;
     position:static;
     width:auto;
