@@ -3,8 +3,8 @@ layout: default
 title: Blog
 ---
 
-<div class="wrapper">
-    <section>
+<div class="jumbotron">
+
         {% for post in site.categories.blog %}
             <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p class="post-meta">
@@ -13,11 +13,11 @@ title: Blog
 
             {% if post.image %}
             <a href="{{ post.url }}">
-            <img src="{{ post.image }}" alt="{{ post.title }}" />
+            <img src="{{ post.image }}" alt="{{ post.title }}" class="img-responsive" />
             </a>
             {% endif %}
 
         <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords:30 }}[<a style="color:red" href="{{ post.url }}">read more</a>]</p>
         {% endfor %}
-    </section>
+
 </div>
