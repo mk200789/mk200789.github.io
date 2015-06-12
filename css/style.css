@@ -21,4 +21,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 17px;
 }
 
+span {
+	color:#7ECBCB;
+}
+#extra a{
+	color:#65A2A2;
+}
+#navbar a{
+	color:#65A2A2;
+}
+.post-title a{
+	color:#65A2A2;
+}
+
+.post-title h1, h2{
+	color:#477171;
+}
 
