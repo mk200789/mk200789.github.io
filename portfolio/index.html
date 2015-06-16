@@ -3,20 +3,16 @@ layout: default
 title: Projects
 ---
 
-<body>
-	<div class="jumbotron">
+<h1 class="post-title">{{page.title}}</h1>
+
+{% for project in site.categories.projects %}
+	<h2 class="post-title"><a href ="{{project.url}}">{{project.title}}</a></h2>
+
+	{% if project.image %}
+	<a href="{{project.url}}"><img src="{{project.image}}" alt="{{project.title}}" class="img-responsive"/></a>
+	{% endif %}
+
+	<p class="post-excerpt">{{ project.excerpt | strip_html | truncatewords:30 }}[<a style="color:red" href="{{ project.url }}">read more</a>]</p>
+{% endfor %}					       
 	    
-	    	<h1 class="post-title">{{page.title}}</h1>
 
-	    	{% for project in site.categories.projects %}
-	    		<h2 class="post-title"><a href ="{{project.url}}">{{project.title}}</a></h2>
-
-	    		{% if project.image %}
-	    		<a href="{{project.url}}"><img src="{{project.image}}" alt="{{project.title}}" class="img-responsive"/></a>
-	    		{% endif %}
-
-	    		<p class="post-excerpt">{{ project.excerpt | strip_html | truncatewords:30 }}[<a style="color:red" href="{{ project.url }}">read more</a>]</p>
-	    	{% endfor %}					       
-	    
-	</div>
-</body>
