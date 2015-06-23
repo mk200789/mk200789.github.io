@@ -37,6 +37,11 @@ ul.list-inline {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -53,7 +58,9 @@ ul.list-inline {
 .jumbotron > p{
 	font-size: 17px;
 }
-
+.extra{
+	padding-top: 22px;
+}
 span {
 	color:#7ECBCB;
 }
@@ -79,4 +86,33 @@ span {
 .post-title h1, h2{
 	color:#477171;
 }
+.about{
+	min-height: 600px;
+	margin-top:10px;
+}
+.portfolio{
+	min-height: 600px;
+	margin-top:10px;
+}
+.showcase{
+	min-height: 600px;
+	margin-top:10px;
+}
+.showcase-section:nth-of-type(odd){
+	background-color: #E0EBEB;
+}
 
+.scrollTop {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 64px;
+    height: 64px;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.mod-nav{
+  padding-right: 70px;
+  padding-left: 70px;
+}
