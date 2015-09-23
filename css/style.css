@@ -116,3 +116,49 @@ span {
   padding-right: 70px;
   padding-left: 70px;
 }
+
+.sub-title{
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 3px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.left{
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	/*background-color: blue;*/
+}
+
+.right{
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	/*background-color: red;*/
+}
+
+.bold{
+	font-weight: bold;
+	color: #000;
+}
+
+.new_row{
+	margin-top: 10px;
+}
+
+.description{
+	font-style: italic;
+	color: #000;
+}
+
+.end_resume{
+	margin-bottom: 50px;
+}
+
+h4{
+	color: #65A2A2;
+	font-size: 30px;
+}
