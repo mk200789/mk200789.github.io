@@ -145,6 +145,12 @@ span {
 	color: #000;
 }
 
+.img_r{
+	width: 240px;
+	display:block;
+	margin: 0 auto;
+}
+
 .new_row{
 	margin-top: 10px;
 }
