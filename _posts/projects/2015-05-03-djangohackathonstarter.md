@@ -3,7 +3,7 @@ layout: portfolio_entry
 categories: "projects"
 title: "Django Hackathon Starter"
 image: /img/portfolio/django_hackathon_starter_api.png
-permalink: "djang-hackathon-starter"
+permalink: "django-hackathon-starter"
 ---
 
 
