@@ -146,7 +146,8 @@ span {
 }
 
 .img_r{
-	width: 240px;
+	/*width: 240px;*/
+	width: initial;
 	display:block;
 	margin: 0 auto;
 }
@@ -172,4 +173,9 @@ span {
 h4{
 	color: #65A2A2;
 	font-size: 30px;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	margin-left: -65px !important;
+    margin-right: -70px !important;
 }
