@@ -2,8 +2,9 @@
 layout: default
 title: Blog
 ---
-
+<div class="blog">
 {% for post in site.categories.blog %}
+	<div class="container">
     <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p class="post-meta">
         {{ post.date | date_to_string }}
@@ -11,9 +12,12 @@ title: Blog
 
     {% if post.image %}
     <a href="{{ post.url }}">
-    <img src="{{ post.image }}" alt="{{ post.title }}" class="img-responsive" />
+    <img src="{{ post.image }}" alt="{{ post.title }}" class="img-responsive extra" />
     </a>
     {% endif %}
 
-<p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords:30 }}[<a style="color:red" href="{{ post.url }}">read more</a>]</p>
+	<p class="post-excerpt">{{ post.excerpt | strip_html  }}</p>
+	<a href="{{ post.url }}" class="btn read-more">read more</a>
+	</div>
 {% endfor %}
+</div>

@@ -4,6 +4,7 @@ categories: "blog"
 title: Cuny Codes, the portfolio building program
 image: /img/blog/hiddengems.png
 ---
+Last spring semester, I joined a portfolio development program called CUNY Codes. This program caters to helping tech majors or individuals who are interested in developing an app from the ground up, to be able to learn, hone and display their skills. 
 
 My Experience
 -------------------

@@ -4,6 +4,7 @@ categories: "blog"
 title: My First Alexa Skill
 image: /img/blog/sxm_alexa_skill.png
 ---
+Earlier this month I published my first Alexa Skill, the Sint Maarten Quiz. What motivated me to create an Alexa Skill was the free t-shirt.
 
 <br>
 Earlier this month I published my first Alexa Skill, the <a href="https://www.amazon.com/wan-kim-mok-Sint-Maarten/dp/B01M4Q7KE3/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1478902122&sr=1-1&keywords=sint+maarten+quiz">Sint Maarten Quiz</a>. What motivated me to create an Alexa Skill was the free t-shirt. No, I’m just kidding! But really, I’ve been passively thinking about Alexa Skill Kit (ASK) ever since I learned a bit more about Amazon echo and Alexa Voice Services (AVS) over the summer when I first started my internship at AOL.

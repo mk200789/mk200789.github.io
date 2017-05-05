@@ -1,18 +1,88 @@
 <div id="portfolio">
 	<div class="container">
 		<div class="portfolio">
-			<h1 class="post-title text-center">Projects</h1>
+			<h1 class="project-title text-center">Projects</h1>
 
-			{% for project in site.categories.projects %}
-				<h2 class="post-title"><a href ="{{project.url}}">{{project.title}}</a></h2>
+			<br>
+			<div class="project-section">
 
-				{% if project.image %}
-				<a href="{{project.url}}"><img src="{{project.image}}" alt="{{project.title}}" class="img-responsive"/></a>
-				{% endif %}
+				<div class="row">
+					<div class="col-md-6">
+						<img src="/img/portfolio/django_hackathon_starter_api.png"  class="img-responsive extra">
+					</div>
+					<div class="col-md-6">
+						<h2>Django Hackathon Starter</h2>
+						<p>A Django boilerplate with API examples and several OAuth integrations, inludes an Ionic application for both mobile and web applications.</p>
+						<a href="https://github.com/DrkSephy/django-hackathon-starter" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<img src="/img/portfolio/pascal_compiler1.png"  class="img-responsive extra">
+					</div>
+					<div class="col-md-6">
+						<h2>Pascal Compiler</h2>
+						<p>Pascal compiler written in python. Supports loops, jumps, declarations, basic arithmetics, and more.</p>
+						<a href="https://github.com/mk200789/pascal_compiler" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<img src="/img/portfolio/fireembem.png"  class="img-responsive extra">
+					</div>
+					<div class="col-md-6">
+						<h2>Fire Emblem</h2>
+						<p>A Fire Emblem clone, a turned-based strategy role playing game built with ImpactJS.</p>
+						<a href="https://github.com/chessmasterhong/WaterEmblem" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
+					</div>
+				</div>
 
-				<p class="post-excerpt">{{ project.excerpt | strip_html | truncatewords:30 }}[<a style="color:red" href="{{ project.url }}">read more</a>]</p>
-			{% endfor %}
+				<div class="row">
+					<div class="col-md-6">
+						<img src="/img/portfolio/super_mario_koopa_krisis_splash.png"  class="img-responsive extra">
+					</div>
+					<div class="col-md-6">
+						<h2>Super Mario: Koopa Krisis</h2>
+						<p>Super Mario World clone, a 2D platformer game, built with ImpactJS.</p>
+						<a href="https://bitbucket.org/DrkSephy/smw-koopa-krisis" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+
+			</div>
 		</div>
 	</div>
-</div>				       
-	    
+</div>
+
+
+
+<!-- <div id="portfolio">
+	<div class="container">
+		<div class="portfolio">
+			<h1 class="project-title text-center">Projects</h1>
+
+			<br>
+			<div class="project-section">
+
+				{% for project in site.categories.projects %}
+				<div class="row">
+				<div class="col-md-6">
+					{% if project.image %}
+					<img src="{{project.image}}" alt="{{project.title}}" class="img-responsive extra"/>
+					{% else %}
+					<img src="/img/portfolio/django_hackathon_starter_api.png "  class="img-responsive extra">
+					{% endif %}
+				</div>
+				<div class="col-md-6">
+					<h2>{{project.title}}</h2>
+					<p>{{ project.excerpt | strip_html | truncatewords:30 }}</p>
+					<a href="{{project.url}}" target="_blank" class="btn read-more" alt="read more">Read more</a>
+					<a href="{{project.source}}" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
+				</div>
+				</div>
+				{% endfor %}
+
+			</div>
+		</div>
+	</div>
+</div> -->

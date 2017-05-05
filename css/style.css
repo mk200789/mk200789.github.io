@@ -60,6 +60,7 @@ ul.list-inline {
 }
 .extra{
 	padding-top: 22px;
+	width: 100%;
 }
 span {
 	color:#7ECBCB;
@@ -79,11 +80,11 @@ span {
 	font-size: 20px;
 	font-weight: bold;
 }
-.post-title a{
+.project-title a{
 	color:#65A2A2;
 }
 
-.post-title h1, h2{
+.project-title h1, h2{
 	color:#477171;
 }
 .about{
@@ -94,12 +95,23 @@ span {
 	min-height: 600px;
 	margin-top:10px;
 }
-.showcase{
+
+.blog{
+	min-height: 600px;
+    margin-top: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.blog-entry{
 	min-height: 600px;
 	margin-top:10px;
 }
-.showcase-section:nth-of-type(odd){
-	background-color: #E0EBEB;
+
+.blog-entry p {
+    text-align: justify;
 }
 
 .scrollTop {
@@ -179,3 +191,50 @@ h4{
 	margin-left: -65px !important;
     margin-right: -70px !important;
 }
+
+
+.row{
+    background-color: white;
+    padding-bottom: 20px;
+    border-bottom-width: thin;
+    border-bottom-color: #e6dbdb;
+    border-bottom-style: solid;
+}
+
+.row:nth-last-child(1) {
+    border-bottom: 0px;
+}
+
+.read-more{
+	background: #65A2A2;
+	padding: 10px;
+	color: white;
+	float: right;
+}
+
+.src{
+	background: #65A2A2;
+	padding: 10px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.dark-orange{
+	color: #e05d0b;
+	font-weight: bold;
+}
+
+.active{
+	color: #cf8fd2;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*@media screen and (min-width: 399px){
+	.blog{
+	margin-left: 0 px;
+	margin-right:0 px;
+	}
+}*/

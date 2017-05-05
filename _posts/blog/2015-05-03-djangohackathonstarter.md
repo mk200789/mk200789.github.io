@@ -1,17 +1,16 @@
 ---
-layout: portfolio_entry
-categories: "projects"
+layout: blog_entry
+categories: "blog"
 title: "Django Hackathon Starter"
 image: /img/portfolio/django_hackathon_starter_api.png
 source: "https://github.com/DrkSephy/django-hackathon-starter"
-permalink: "django-hackathon-starter"
 ---
 
 
 In Spring 2015, I worked on a class project called the <a href="https://github.com/mk200789/django-hackathon-starter">Django Hackathon Starter</a>. The idea of this project is to help developers save time when developing Django applications using/choosing which API to use and figuring how to use OAuth authentication.
 
 
-###My Role and Experience
+### My Role and Experience
 
 This project was the first time I've worked with OAuth authentication. It takes patients reading documentation, and when documentations for handling OAuth (or the API) aren't clear you need more patients! On this project, the APIs and their respective OAuth are: Twitter, Instagram, Tumblr, LinkedIn, and Github. Which then also lead to being able to login through these 5 APIs.
 
