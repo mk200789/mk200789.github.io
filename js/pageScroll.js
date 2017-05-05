@@ -11,6 +11,8 @@ $(document).ready(function(){
 		$('html,body').animate({
 			scrollTop:$(this.hash).offset().top
 		},1500);
+		$('#navbar').collapse('hide');
 		event.preventDefault();
 	});
+
 });
