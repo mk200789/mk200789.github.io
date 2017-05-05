@@ -20,7 +20,7 @@ html {
 
 ul.social-buttons {
 	margin-bottom: 0;
-	line-height: 55px;
+	line-height: 40px;
 }
 
 ul.social-buttons li a {
@@ -116,7 +116,7 @@ span {
 
 .scrollTop {
     position: fixed;
-    bottom: 5px;
+    bottom: -20px;
     right: 5px;
     width: 64px;
     height: 64px;
@@ -196,12 +196,15 @@ h4{
 .row{
     background-color: white;
     padding-bottom: 20px;
+}
+
+.line{
     border-bottom-width: thin;
     border-bottom-color: #e6dbdb;
     border-bottom-style: solid;
 }
 
-.row:nth-last-child(1) {
+.line:nth-last-child(1) {
     border-bottom: 0px;
 }
 
@@ -230,6 +233,16 @@ h4{
 	color: #cf8fd2;
 	font-weight: bold;
 	font-style: italic;
+}
+
+.social{
+	text-align: center;
+}
+
+.footer-text{
+	padding-top: 15px;
+    font-weight: bold;
+    color: #426d6d;
 }
 
 /*@media screen and (min-width: 399px){
