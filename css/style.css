@@ -245,6 +245,13 @@ h4{
     color: #426d6d;
 }
 
+.resume{
+	width: -webkit-fill-available;
+	height: -webkit-fill-available;
+	border: none;
+}
+
+
 /*@media screen and (min-width: 399px){
 	.blog{
 	margin-left: 0 px;
