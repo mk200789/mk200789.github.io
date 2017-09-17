@@ -261,6 +261,31 @@ ul.list-inline {
 	border: none;
 }
 
+.tag{
+	padding: 0.5em;
+	letter-spacing: normal;
+	border-width: thin;
+	border-style: solid;
+	border-color: grey;
+	border-radius: 5px;
+	font-size: 10px;
+	color: black;
+     font-weight: 400;
+}
+.test {
+    width: inherit;
+}
+
+#test{
+	width:100%;
+}
+
+.test > .pure-g, .tag_list {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
 @media (max-width: 47.999em) {
 	.about, .portfolio{
 		padding: 0;
