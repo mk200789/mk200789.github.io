@@ -3,14 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Welcome 2015! - Wan Kim Mok</title>
 
     <link rel="canonical" href="http://mk200789.github.io/blog/2015/01/14/2015firstblog.html">
 
     <!-- Customized stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" >
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
 
     <link rel="stylesheet" href="/css/style.css">
 
@@ -19,38 +27,32 @@
     <link rel="icon" type="image" href="/img/favicon-16.png" sizes="16x16" >
     <link rel="icon" type="image" href="/img/favicon-32.png" sizes="32x32" >
 
-
 </head>
 
 
 <body>
-    <nav class="navbar navbar-expand-md mod-nav">
-     <a class="navbar-brand" href="/"><i class="fa fa-home fa-lg"></i></a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="collapse navbar-collapse navbar-right" id="navbarCollapse">
-           <ul class="navbar-nav justify-content-end">
-             <li class="nav-item ">
-               <a class="nav-link" href="/#about" class="scroll">About</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="/#portfolio" class="scroll">Portfolio</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="/resume/">Resume</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="https://medium.com/@kimmok" target="_blank"><i class="fa fa-medium"></i></a>
-             </li>
-           </ul>
-      </div>
-</nav>
+    <div class="custom-wrapper pure-g" id="menu">
+     <div class="pure-u-1 pure-u-md-2-5">
+          <div class="pure-menu">
+               <a href="/" class="pure-menu-heading custom-brand"><i class="fa fa-home fa-lg"></i></a>
+               <a href="#" class="custom-toggle menu-link" id="toggle">
+                    <span></span>
+               </a>
+          </div>
+     </div>
+     <div class="pure-u-1 pure-u-md-3-5">
+         <div class="pure-menu pure-menu-horizontal custom-can-transform custom-menu" id="menu-horizontal">
+             <ul class="pure-menu-list" id="menu-item-link">
+                 <li class="pure-menu-item"><a href="/#about" class="pure-menu-link custom-menu-link scroll">About</a></li>
+                 <li class="pure-menu-item"><a href="/#portfolio" class="pure-menu-link custom-menu-link scroll">Portfolio</a></li>
+                 <li class="pure-menu-item"><a href="/resume/" class="pure-menu-link custom-menu-link">Resume</a></li>
+                 <li class="pure-menu-item"><a href="https://medium.com/@kimmok" target="_blank" class="pure-menu-link custom-menu-link"><i class="fa fa-medium"></i></a></li>
+             </ul>
+         </div>
+     </div>
+</div>
 
     <div class="container">
-        <div class="jumbotron">
         	<div class="blog-entry">
 	<h2 class="content">Welcome 2015!</h2>
 
@@ -74,12 +76,9 @@
 <p>Peace.</p>
 
 </div>
-        </div>
     </div>
     <footer class="footer">
-  <div class="container text-center">
         <p class="footer-text">© 2017 Wan Kim Mok</p>
-  </div>
 </footer>
 
 <a href="#" class="scrollTop"><i class="fa fa-caret-up"></i></a>
@@ -89,10 +88,9 @@
 
 <!-- Page Scroll script-->
 <script src="/js/pageScroll.js"></script>
+<script src="/js/navBar.js"></script>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="/js/custom.js"></script>
 
 </body>
 </html>

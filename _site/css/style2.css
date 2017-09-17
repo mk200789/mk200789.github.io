@@ -3,25 +3,17 @@
 
 body {
 	min-height: 100px;
+	/*font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	font-family: 'Lato', sans-serif;
 	color:#333 !important;
-	font-weight: 300;
-	font-size: 21px;
+	font-weight:300;
+	font-size: 20px;
 }
 
-p{
-	font-weight:100;
-	line-height: 1.4em;
-}
-
-.pure-g [class*=pure-u] {
-	font-family: 'Lato' !important;
-}
 h1, h2, h3, h4, h5, h6 {
 	color:#222;
 	font-weight: bold;
 }
-
 
 .custom-wrapper {
 	padding: 10px 20px;
@@ -35,9 +27,6 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transition: height 0.5s;
     -ms-transition: height 0.5s;
     transition: height 0.5s;
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 17px;
 }
 
 .custom-wrapper.open {
@@ -119,8 +108,8 @@ span{
 }
 
 .img-responsive{
-	width: -webkit-fill-available;
-	padding: 0 30px 30px 20px;
+	width: 100%;
+	padding: 0 10px 10px 10px;
 	display: block;
 }
 
@@ -135,9 +124,6 @@ img.img-responsive {
 }
 
 /* About section*/
-.about > h1 {
-	margin-bottom: 10px;
-}
 .social{
 	text-align: center;
 }
@@ -152,7 +138,7 @@ img.img-responsive {
 }
 
 .profile_content{
-	/*padding: 0 10px 10px 10px;*/
+	padding: 0 10px 10px 10px;
 }
 
 ul.list-inline li a {
@@ -175,16 +161,15 @@ ul.list-inline {
     border-bottom-color: #e6dbdb;
     border-bottom-style: solid;
     margin-top:30px;
-    padding-bottom: 20px;
 }
 
-.line:nth-last-child(1) {
-    border-bottom: 0px;
+.row{
+	padding-bottom: 20px;
 }
 
 .portfolio_content{
-	/*padding-left:20px;
-	padding-right:20px;*/
+	padding-left:20px;
+	padding-right:20px;
 }
 
 .src{
@@ -198,10 +183,6 @@ ul.list-inline {
 
 .project-title h1, h2{
 	color:#477171;
-}
-
-.portfolio_content > h2{
-	margin-top: 0;
 }
 
 /* footer */
@@ -231,32 +212,9 @@ ul.list-inline {
     filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
-.about{
-	padding: 80px;
-	padding-top: 0;
-}
-
-.portfolio{
-	padding: 0 80px;
-}
-
-/* resume section */
-
-.resume{
-	width: -webkit-fill-available;
-	height: -webkit-fill-available;
-	border: none;
-}
-
 @media (max-width: 47.999em) {
-	.about, .portfolio{
-		padding: 0;
-	}
-
 	.custom-wrapper {
-		height: 1.8em ;
-		margin-left: 0;
-		margin-right: 0;
+		height: 3.8em;
 	}
 
     .custom-menu {
@@ -269,28 +227,6 @@ ul.list-inline {
 	   width: unset ;
         height: unset;
         padding: .7em 1em;
-    }
-
-    .menu-link span, .menu-link span:before, .menu-link span:after {
-        width: 1em;
-        height: .1em;
-    }
-
-
-    .menu-link span:before, .menu-link span:after {
-        top: -.25em;
-    }
-
-    .menu-link span:after {
-        top: .25em;
-    }
-
-    .menu-link span {
-        margin-top: 0.7em;
-    }
-
-    .footer-text{
-	    font-size:  small;
     }
 
 }

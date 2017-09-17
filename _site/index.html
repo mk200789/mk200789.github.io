@@ -3,14 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Wan Kim Mok</title>
 
     <link rel="canonical" href="http://mk200789.github.io/">
 
     <!-- Customized stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" >
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
 
     <link rel="stylesheet" href="/css/style.css">
 
@@ -19,219 +27,142 @@
     <link rel="icon" type="image" href="/img/favicon-16.png" sizes="16x16" >
     <link rel="icon" type="image" href="/img/favicon-32.png" sizes="32x32" >
 
-
 </head>
 
 
 <body>
-    <nav class="navbar navbar-expand-md mod-nav">
-     <a class="navbar-brand" href="/"><i class="fa fa-home fa-lg"></i></a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="collapse navbar-collapse navbar-right" id="navbarCollapse">
-           <ul class="navbar-nav justify-content-end">
-             <li class="nav-item ">
-               <a class="nav-link" href="/#about" class="scroll">About</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="/#portfolio" class="scroll">Portfolio</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="/resume/">Resume</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="https://medium.com/@kimmok" target="_blank"><i class="fa fa-medium"></i></a>
-             </li>
-           </ul>
-      </div>
-</nav>
+    <div class="custom-wrapper pure-g" id="menu">
+     <div class="pure-u-1 pure-u-md-2-5">
+          <div class="pure-menu">
+               <a href="/" class="pure-menu-heading custom-brand"><i class="fa fa-home fa-lg"></i></a>
+               <a href="#" class="custom-toggle menu-link" id="toggle">
+                    <span></span>
+               </a>
+          </div>
+     </div>
+     <div class="pure-u-1 pure-u-md-3-5">
+         <div class="pure-menu pure-menu-horizontal custom-can-transform custom-menu" id="menu-horizontal">
+             <ul class="pure-menu-list" id="menu-item-link">
+                 <li class="pure-menu-item"><a href="/#about" class="pure-menu-link custom-menu-link scroll">About</a></li>
+                 <li class="pure-menu-item"><a href="/#portfolio" class="pure-menu-link custom-menu-link scroll">Portfolio</a></li>
+                 <li class="pure-menu-item"><a href="/resume/" class="pure-menu-link custom-menu-link">Resume</a></li>
+                 <li class="pure-menu-item"><a href="https://medium.com/@kimmok" target="_blank" class="pure-menu-link custom-menu-link"><i class="fa fa-medium"></i></a></li>
+             </ul>
+         </div>
+     </div>
+</div>
 
     <div class="container">
-        <div class="jumbotron">
         	    <div id="about">
-	<div class="container">
-		<div class="about">
-			<h1 class="text-center"> Hi! My name is <span>Kim</span>. </h1>
+	<div class="about">
+		<h1 class="text-center"> Hi! My name is <span>Kim</span>. </h1>
 
-			<div class="social">
-				<ul class="social-buttons list-inline">
-		            <li><a href="http://github.com/mk200789" target="_blank"><i class="fa fa-github-square fa-lg"></i></a></li>
-		            <li><a href="http://bitbucket.org/mk200789" target="_blank"><i class="fa fa-bitbucket-square fa-lg"></i></a></li>
-		            <li><a href="https://www.linkedin.com/in/wankimmok" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-		            <li><a href="mailto:cafe.mui@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></li>
-		        </ul>
-			</div>
-
-			<br>
-			<div class="row">
-			<div class="col-md-4">
-				<img src="img/me.jpg" class="img-responsive img_r">
-			</div>
-			<div class="col-md-8">
-				<p> I'm a software engineer who is passionate about web and mobile development.</p>
-
-				<p>I'm an avid learner with experience in client-side and server-side web development using <span class="orange">AngularJS</span>, <span class="orange">Django</span>, <span class="orange">Flask</span>, and <span class="orange">Jekyll</span>. </p>
-
-				<p>When I'm not coding, I'm either wandering around the city, cooking or just working on side projects.</p>
-
-				<p>I'm currently learning <span class="active">react-native</span> and just submitted my app first iOS app, <a href="https://itunes.apple.com/US/app/id1215113951" target="_blank" class="dark-orange">Where Is My Bus?</a>, to the app store!</p>
-			</div>
-			</div>
-
+		<div class="social">
+			<ul class="list-inline">
+	            <li><a href="http://github.com/mk200789" target="_blank"><i class="fa fa-github-square fa-lg"></i></a></li>
+	            <li><a href="http://bitbucket.org/mk200789" target="_blank"><i class="fa fa-bitbucket-square fa-lg"></i></a></li>
+	            <li><a href="https://www.linkedin.com/in/wankimmok" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+	            <li><a href="mailto:cafe.mui@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></li>
+	        </ul>
 		</div>
 
+		<br>
 
+		<div class="pure-g">
+		    <div class="pure-u-1 pure-u-md-2-5">
+			    <img src="img/me.jpg" class="img-responsive">
+		    </div>
+		    <div class="pure-u-1 pure-u-md-3-5 profile_content">
+			    	<p> I'm a software engineer who is passionate about web and mobile development.</p>
+
+    				<p>I'm an avid learner with experience in client-side and server-side web development using <span class="orange">AngularJS</span>, <span class="orange">Django</span>, <span class="orange">Flask</span>, and <span class="orange">Jekyll</span>. </p>
+
+    				<p>When I'm not coding, I'm either wandering around the city, cooking or just working on side projects.</p>
+
+    				<p>I'm currently learning <span class="active">react-native</span> and just submitted my app first iOS app, <a href="https://itunes.apple.com/US/app/id1215113951" target="_blank" class="dark-orange">Where Is My Bus?</a>, to the app store!</p>
+		    </div>
+		</div>
 	</div>
 </div>
 
     <div id="portfolio">
-	<div class="container">
-		<div class="portfolio">
-			<h1 class="project-title text-center">Projects</h1>
+	<div class="portfolio">
+		<h1 class="project-title text-center">Projects</h1>
 
-			<br>
-			<div class="project-section">
+		<br>
+		<div class="project-section">
 
-				<div class="row line">
-					<div class="col-md-6">
+			<div class=" line">
+				<div class="pure-g ">
+					<div class="pure-u-1 pure-u-md-1-2">
 						<img src="/img/portfolio/wimb.png"  class="img-responsive extra">
 					</div>
-					<div class="col-md-6">
+					<div class="pure-u-1 pure-u-md-1-2 portfolio_content">
 						<h2>Where Is My Bus?</h2>
 						<p>An iOS app to find the nearest mta bus stop, get the bus that stops at thet stop and each of the time of the next coming bus. Where Is My Bus? is built with swift and using the MTA Bus API.</p>
 						<a href="https://github.com/mk200789/WIMB" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="row line">
-					<div class="col-md-6">
+			</div>
+			<div class=" line">
+				<div class="pure-g ">
+					<div class="pure-u-1 pure-u-md-1-2">
 						<img src="/img/portfolio/django_hackathon_starter_api.png"  class="img-responsive extra">
 					</div>
-					<div class="col-md-6">
+					<div class="pure-u-1 pure-u-md-1-2 portfolio_content">
 						<h2>Django Hackathon Starter</h2>
 						<p>A Django boilerplate with API examples and several OAuth integrations, includes an Ionic application for both mobile and web applications.</p>
 						<a href="https://github.com/DrkSephy/django-hackathon-starter" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="row line">
-					<div class="col-md-6">
+			</div>
+			<div class=" line">
+				<div class="pure-g">
+					<div class="pure-u-1 pure-u-md-1-2">
 						<img src="/img/portfolio/pascal_compiler1.png"  class="img-responsive extra">
 					</div>
-					<div class="col-md-6">
+					<div class="pure-u-1 pure-u-md-1-2 portfolio_content">
 						<h2>Pascal Compiler</h2>
 						<p>Pascal compiler written in python. Supports loops, jumps, declarations, basic arithmetics, and more.</p>
 						<a href="https://github.com/mk200789/pascal_compiler" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="row line">
-					<div class="col-md-6">
+			</div>
+			<div class="line">
+				<div class="pure-g">
+					<div class="pure-u-1 pure-u-md-1-2">
 						<img src="/img/portfolio/fireembem.png"  class="img-responsive extra">
 					</div>
-					<div class="col-md-6">
+					<div class="pure-u-1 pure-u-md-1-2 portfolio_content">
 						<h2>Fire Emblem</h2>
 						<p>A Fire Emblem clone, a turned-based strategy role playing game built with ImpactJS.</p>
 						<a href="https://github.com/chessmasterhong/WaterEmblem" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
 					</div>
 				</div>
+			</div>
 
-				<div class="row line">
-					<div class="col-md-6">
+			<div class="line">
+				<div class="pure-g">
+					<div class="pure-u-1 pure-u-md-1-2">
 						<img src="/img/portfolio/super_mario_koopa_krisis_splash.png"  class="img-responsive extra">
 					</div>
-					<div class="col-md-6">
+					<div class="pure-u-1 pure-u-md-1-2 portfolio_content">
 						<h2>Super Mario: Koopa Krisis</h2>
 						<p>Super Mario World clone, a 2D platformer game, built with ImpactJS.</p>
 						<a href="https://bitbucket.org/DrkSephy/smw-koopa-krisis" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
 					</div>
 				</div>
-
-
 			</div>
+
+
 		</div>
 	</div>
 </div>
 
 
-
-<!-- <div id="portfolio">
-	<div class="container">
-		<div class="portfolio">
-			<h1 class="project-title text-center">Projects</h1>
-
-			<br>
-			<div class="project-section">
-
-				
-				<div class="row">
-				<div class="col-md-6">
-					
-					<img src="/img/portfolio/django_hackathon_starter_api.png" alt="Django Hackathon Starter" class="img-responsive extra"/>
-					
-				</div>
-				<div class="col-md-6">
-					<h2>Django Hackathon Starter</h2>
-					<p>In Spring 2015, I worked on a class project called the Django Hackathon Starter. The idea of this project is to help developers save time when developing Django applications using/choosing...</p>
-					<a href="/django-hackathon-starter" target="_blank" class="btn read-more" alt="read more">Read more</a>
-					<a href="https://github.com/DrkSephy/django-hackathon-starter" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
-				</div>
-				</div>
-				
-				<div class="row">
-				<div class="col-md-6">
-					
-					<img src="/img/portfolio/pascal_compiler1.png" alt="Pascal Compiler" class="img-responsive extra"/>
-					
-				</div>
-				<div class="col-md-6">
-					<h2>Pascal Compiler</h2>
-					<p>In Fall 2014, I worked on a Pascal compiler using python for my Compiler Construction class. The compiler I worked on did very basic things.
-</p>
-					<a href="/pascal-compiler" target="_blank" class="btn read-more" alt="read more">Read more</a>
-					<a href="https://github.com/mk200789/pascal_compiler" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
-				</div>
-				</div>
-				
-				<div class="row">
-				<div class="col-md-6">
-					
-					<img src="/img/portfolio/fireembem.png" alt="Fire Emblem" class="img-responsive extra"/>
-					
-				</div>
-				<div class="col-md-6">
-					<h2>Fire Emblem</h2>
-					<p>Fire Emblem is another clone built using Javascript and ImpactJS game engine. It was started by one of groupmate Kevin Chen, and was further developed during the semester under the...</p>
-					<a href="/fire-emblem" target="_blank" class="btn read-more" alt="read more">Read more</a>
-					<a href="https://github.com/chessmasterhong/WaterEmblem" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
-				</div>
-				</div>
-				
-				<div class="row">
-				<div class="col-md-6">
-					
-					<img src="/img/portfolio/super_mario_koopa_krisis_splash.png" alt="Super Mario: Koopa Krisis" class="img-responsive extra"/>
-					
-				</div>
-				<div class="col-md-6">
-					<h2>Super Mario: Koopa Krisis</h2>
-					<p>Super Mario World Koopa Krisis is a clone built using Javascript and ImpactJS game engine. It was developed under the City College of New York Association of Computing Machinery’s (ACM)...</p>
-					<a href="/smw-koopa-krisis" target="_blank" class="btn read-more" alt="read more">Read more</a>
-					<a href="https://bitbucket.org/DrkSephy/smw-koopa-krisis" target="_blank" class="btn src" alt="source code"><i class="fa fa-code" aria-hidden="true"></i></a>
-				</div>
-				</div>
-				
-
-			</div>
-		</div>
-	</div>
-</div> -->
-        </div>
     </div>
     <footer class="footer">
-  <div class="container text-center">
         <p class="footer-text">© 2017 Wan Kim Mok</p>
-  </div>
 </footer>
 
 <a href="#" class="scrollTop"><i class="fa fa-caret-up"></i></a>
@@ -241,10 +172,9 @@
 
 <!-- Page Scroll script-->
 <script src="/js/pageScroll.js"></script>
+<script src="/js/navBar.js"></script>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="/js/custom.js"></script>
 
 </body>
 </html>
