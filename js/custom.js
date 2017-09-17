@@ -9,4 +9,10 @@ $(document).ready(function(){
           var menu_horizontal = document.getElementById("menu-horizontal");
           menu_horizontal.setAttribute("class", "pure-menu pure-menu-horizontal custom-can-transform custom-menu")
      });
+
+     $('.type-it').typeIt({
+         speed: 70,
+         lifeLike: false,
+         autoStart: false
+       })
 });

@@ -57,6 +57,12 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+li.pure-menu-item:hover,
+a.custom-brand:hover {
+	/*color:#65A2A2;*/
+	font-size: 20px;
+}
+
 .menu-link span, .menu-link span:before, .menu-link span:after {
     background-color: #565d64;
     width: 2em;
@@ -135,9 +141,12 @@ img.img-responsive {
 }
 
 /* About section*/
+
 .about > h1 {
 	margin-bottom: 10px;
 }
+
+
 .social{
 	text-align: center;
 }
@@ -170,6 +179,10 @@ ul.list-inline {
 	line-height: 40px;
 }
 /*project section */
+.portfolio >h1{
+	margin-bottom: 50px;
+}
+
 .line{
     border-bottom-width: thin;
     border-bottom-color: #e6dbdb;
