@@ -40,6 +40,8 @@ ul.list-inline {
 
 .navbar-static-top {
   margin-bottom: 19px;
+  background: transparent !important;
+  border: none !important;
 }
 
 .footer {
@@ -190,6 +192,7 @@ h4{
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
 	margin-left: -65px !important;
     margin-right: -70px !important;
+    padding-top: 20px;
 }
 
 

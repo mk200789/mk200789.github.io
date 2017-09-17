@@ -2,16 +2,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+
     <title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Customized stylesheet -->
     <link rel="stylesheet" href="{{"/css/bootstrap.min.css" | prepend: site.baseurl }}">
+
     <!--<link rel="stylesheet" href="//getbootstrap.com/examples/navbar-fixed-top/navbar-static-top.css">-->
     <link rel="stylesheet" href="{{"/css/style.css" | prepend: site.baseurl }}">
-    <!-- <link rel="stylesheet" href="{{"/css/font-awesome-4.2.0/css/font-awesome.min.css" | prepend: site.baseurl}}"> -->
-    <link rel="stylesheet" href="{{"/css/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl}}">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/628cdd5605.css" media="all">
 
     <link rel="icon" type="image" href="{{"/img/favicon-16.png"}}" sizes="16x16" >
     <link rel="icon" type="image" href="{{"/img/favicon-32.png"}}" sizes="32x32" >
