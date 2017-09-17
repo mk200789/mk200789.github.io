@@ -8,9 +8,14 @@ body {
 	font-weight:300;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
 	color:#222;
 	font-weight: bold;
+}
+
+h1{
+	font-size: 36px !important;
 }
 
 html {
@@ -36,6 +41,14 @@ ul.social-buttons a:hover {
 ul.list-inline {
     margin-top: 0;
     margin-bottom: 0;
+    display:inline-flex;
+    letter-spacing: 10px;
+}
+
+.jumbotron p{
+	margin-bottom: 15px;
+     font-size: 21px;
+     font-weight: 200;
 }
 
 .navbar-static-top {
@@ -50,7 +63,7 @@ ul.list-inline {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #fbfbfb;
 }
 
 .jumbotron{
@@ -73,6 +86,13 @@ span {
 #extra a:hover{
 	color:#65A2A2;
 	font-size: 27px;
+}
+
+a.nav-link {
+	color: #65A2A2 !important;
+}
+a.navbar-brand {
+	color: #65A2A2 !important;
 }
 #navbar a{
 	color:#65A2A2;
@@ -129,6 +149,7 @@ span {
 .mod-nav{
   padding-right: 70px;
   padding-left: 70px;
+  background-color: white !important;
 }
 
 .sub-title{
@@ -161,7 +182,7 @@ span {
 
 .img_r{
 	/*width: 240px;*/
-	width: initial;
+	width: inherit;
 	display:block;
 	margin: 0 auto;
 }
@@ -245,7 +266,7 @@ h4{
 .footer-text{
 	padding-top: 15px;
     font-weight: bold;
-    color: #426d6d;
+    color: rgba(66, 109, 109, 0.34);
 }
 
 .resume{
@@ -254,7 +275,51 @@ h4{
 	border: none;
 }
 
+.navbar-right{
+	flex-flow: row-reverse;
+}
 
+.col-md-4{
+	margin-bottom: 30px;
+}
+
+
+.navbar .navbar-toggler .icon-bar {
+	background-color: #65A2A2 !important;
+}
+
+.navbar-toggler .icon-bar{
+	display: block;
+     width: 22px;
+     height: 2px;
+     border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-toggler:focus{
+	outline: 0;
+}
+
+.navbar-collapse {
+	text-align: center;
+}
+
+@media screen and (min-width: 768px){
+	.jumbotron h1{
+		font-size: 63px !important;
+	}
+}
+
+.container{
+	padding: 0 20px 0 20px;
+}
+
+.navbar{
+	padding-top: 20px;
+}
 /*@media screen and (min-width: 399px){
 	.blog{
 	margin-left: 0 px;
