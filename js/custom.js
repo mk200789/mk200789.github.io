@@ -30,6 +30,8 @@ $(document).ready(function(){
                     break;
                case 'javascript':
                case 'html5':
+               case 'aws':
+               case 'responsive':
                     tagStyle.backgroundColor='#dade26';
                     break;
                case 'python':
