@@ -23,6 +23,7 @@ $(document).ready(function(){
      function colorTag(tag, tagStyle){
           switch(tag){
                case 'core data':
+               case 'nsuserdefaults':
                     tagStyle.backgroundColor='#33bfc7';
                     break;
                case 'swift':
